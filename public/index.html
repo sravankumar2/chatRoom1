@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>CHAT ROOM</title>
+</head>
+
+<body>
+    <div class="containter">
+        <div class="header">
+            <div class="logo">
+                <h3>CHATROOM</h3>
+            </div>
+            <p id="your-name">your-name</p>
+        </div>
+        <div class="chat-section">
+            <div class="main-wrapper">
+                <div class="chat-content">
+                    <div class="message">
+                        <div class="message-row other-message">
+                            <!-- <div class="message-title"><span>DEv AT</span></div>
+                            <div class="message-text">lllllllllllllllllll</div>
+                            <div class="message-time">aprtil 20</div> -->
+
+                        </div>
+                        <div class="message-row your-message">
+                            <!-- <div class="message-title"><span>user 01</span></div>
+                            <div class="message-text">kijanck</div>
+                            <div class="message-time">march 20</div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form class="msg-form">
+            <input type="text" name='msg' id="msg" placeholder="Type Message Here" autocomplete="off" />
+            <button class="btn">Send</button>
+        </form>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

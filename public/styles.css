@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containter{
+   max-width: 500px;
+   width: 100%;
+   border-radius: 10px;
+   box-shadow: 2px 9px 25px #ccc;
+   overflow: hidden;
+   border:1px solid #111;
+   background-color: #CCC;
+
+}
+.header{
+    min-height: 50px;
+    overflow: hidden;
+    background:#ccc(77, 72, 72);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+.header .logo{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    color: yellowgreen;
+
+}
+.logo h3{
+    letter-spacing: 2px;
+    margin-left: 10px;
+    color: orangered;
+}
+.header p{
+    margin-right: 20px;
+    cursor: pointer;
+    opacity:0.8;
+    color: green;
+}
+.chat-section{
+    padding: 20px;
+}
+.main-wrapper{
+    width: 100%;
+    height: 450px;
+    background: #fff;
+    overflow-y: auto;
+    box-shadow: inset 0 0 1px #111;
+    padding:  0 10px ;
+    border-radius: 3px;
+
+}
+.containter .message{
+    width:100%;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.message-row{
+    display: grid;
+    grid-template-columns: 70%;
+    margin-bottom: 10px;
+    
+}
+.your-message{
+    justify-content: end;
+    justify-items: end;
+}
+.other-message{
+    justify-content: start;
+    justify-items: start;
+}
+.message-text{
+    padding: 9px 14px;
+    margin-bottom: 5px;
+
+}
+.message-time{
+    font-size: 14px;
+    color:#777
+}
+.your-message .message-text{
+    background: #eee;
+  
+    border:1px solid #ddd;
+    border-radius: 14px 14px 14px 0;
+
+}
+.message-title span{
+    font-size: 12px;
+    text-transform: capitalize;
+
+}
+.msg-form{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+}
+.msg-form input, button{
+    flex: 4;
+    height: 40px;
+    outline: none;
+    border: 1px solid #888;
+    padding: 0 10px;
+    border-radius: 3px;
+
+}
+.msg-form button{
+    flex:1;
+    max-width: 120px;
+    cursor: pointer;
+    background-color: orange;
+    margin: 0 5px;
+
+}
+.msg-form button:hover{
+    background-color: rgb(209, 156, 57);
+   
+}
+.other-message .message-title span{
+    color: #FFF;
+    padding: 10px;
+    background-color: green;
+}
+.disconnect{
+    padding: 10px;
+    color: #fff;
+    background-color: red;
+}
